@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	position: relative;
+	background: #000;
+	margin:0;
+	touch-action: none;
+}
+
+#extra, #view, #menu, #leaderboard, #inputname, #gameover{
+	--scale: 1;
+	position: absolute;
+	left: 50%;
+	top: 54%;
+	text-align: left;
+	background: #fff;
+	-webkit-transform-origin: 0 0;
+	transform-origin: 0 0;
+	transform-box: fill-box;	
+}
+
+@media all and (min-width:640px) and (min-height: 0px) and (max-height: 63px) {
+	#extra, #view, #menu, #leaderboard, #inputname, #gameover {
+		--scale: 0;
+	}
+}
+
+@media all and (min-width:640px) and (min-height: 64px) and (max-height: 139px) {
+	#extra, #view, #menu, #leaderboard, #inputname, #gameover {
+		--scale: 0.1;
+	}
+}
+
+@media all and (min-width:640px) and (min-height: 140px) and (max-height: 224px) {
+	#extra, #view, #menu, #leaderboard, #inputname, #gameover {
+		--scale: 0.25;
+	}
+}
+
+@media all and (min-width:640px) and (min-height: 225px) and (max-height: 279px) {
+	#extra, #view, #menu, #leaderboard, #inputname, #gameover {
+		--scale: 0.4;
+	}
+}
+
+@media all and (min-width:640px) and (min-height: 280px) and (max-height: 359px) {
+	#extra, #view, #menu, #leaderboard, #inputname, #gameover {
+		--scale: 0.5;
+	}
+}
+
+@media all and (min-width:640px) and (min-height: 360px) and (max-height: 419px) {
+	#extra, #view, #menu, #leaderboard, #inputname, #gameover {
+		--scale: 0.6;
+	}
+}
+
+@media all and (min-width:640px) and (min-height: 420px) and (max-height: 579px) {
+	#extra, #view, #menu, #leaderboard, #inputname, #gameover {
+		--scale: 0.75;
+	}
+}
+
+/* Adjust for widths < 640px */
+@media all and (min-width:569px) and (max-width: 639px) {
+	#extra, #view, #menu, #leaderboard, #inputname, #gameover {
+		--scale: 0.875;
+	}
+}
+
+@media all and (min-width:481px) and (max-width: 568px) {
+	#extra, #view, #menu, #leaderboard, #inputname, #gameover {
+		--scale: 0.75;
+	}
+}
+
+@media all and (min-width:321px) and (max-width: 480px) {
+	#extra, #view, #menu, #leaderboard, #inputname, #gameover {
+		--scale: 0.5;
+	}
+}
+
+@media all and (min-width:256px) and (max-width: 320px) {
+	#extra, #view, #menu, #leaderboard, #inputname, #gameover {
+		--scale: 0.4;
+	}
+}
+
+@media all and (min-width:160px) and (max-width: 255px) {
+	#extra, #view, #menu, #leaderboard, #inputname, #gameover {
+		--scale: 0.25;
+	}
+}
+
+@media all and (min-width:64px) and (max-width: 159px) {
+	#extra, #view, #menu, #leaderboard, #inputname, #gameover {
+		--scale: 0.1;
+	}
+}
+
+@media all and (min-width:0px) and (max-width: 63px) {
+	#extra, #view, #menu, #leaderboard, #inputname, #gameover {
+		--scale: 0;
+	}
+}
+
+#extra, #view, #menu, #leaderboard, #inputname, #gameover {
+	-webkit-transform: scale(var(--scale));
+	transform: scale(var(--scale));
+	width: 640px;
+    height: 480px;
+	margin: calc(-280px * var(--scale)) auto auto calc(-320px * var(--scale));
+}
+
+em{
+	display: none;
+}
+
+#view{
+	display: block;
+	background: transparent url(blank.gif) repeat 0 0;
+	cursor: default;
+	z-index: 20;
+}
+
+#extra{
+	background: #000;
+}
+#extra .layer{
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 10;
+}
+#fork{
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 356px;
+	height: 92px;
+	cursor: pointer;
+	background-image: url(fork.gif);
+	z-index: 0;
+}
+
+#desc{
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	height: 80px;
+	color: #ccc;
+	line-height: 40px;
+	margin-top: 200px;
+	text-align: center;
+	font-size: 14px;
+}
+
+#desc a{
+	color: #318fe1;
+}
+
+#browser{
+	font-size: 14px;
+	line-height: 16px;
+}
+
+#browser .b{
+	color: #fff;
+	font-weight: 700;
+}
+#inputname{
+	display: block;
+	background: transparent;
+	z-index: 902;
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 30px;
+	color: #fff;
+	text-align: center;
+}
+#ninjianame{
+	background: transparent;
+	border: 2px solid #42a283;
+	text-align: center;
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 28px;
+	border-radius: 9px;
+	color: #fff;
+	padding: 5px 0;
+	width: 240px;
+	margin-top: 200px;
+}
+#ninjianame:focus{border: 2px solid #cff1e6;}
+#submit{
+	display: block;
+	margin-top: 50px;
+	margin-left: 224px;
+}
+#menu{
+	display: none;
+	text-align: center;
+	background: transparent;	
+	z-index: 1;
+}
+#connectwallet{
+	display: none;
+	margin-top: 240px;
+}
+#playnow{
+	
+	margin: 240px auto 0;
+}
+#goleader{
+	margin-top: 10px;
+}
+#leaderboard{
+	display: none;
+	text-align: center;
+	background: url(leaderboard/lead-bg.jpg);
+	z-index: 901;
+}
+.lead-title{margin-top: 35px;}
+#lead-th,#ranking{	
+	width: 480px;	
+	color: #fff;
+	text-align: center;
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+#lead-th{margin-top: 10px;margin-left: 80px;}
+#lead-th td{font-size: 21px;}
+#rankBlock{margin-left:80px;width: 500px;height: 250px;overflow-y: scroll;}
+#ranking tr{display: block;margin: 5px;background: rgba(255,255,255,0.13);border-radius: 5px;}
+#ranking tr.top3{background: rgba(253,249,189,0.33);}
+#ranking td{height: 30px;font-size: 19px;text-shadow: 2px 2px #000000;}
+#ranking td.num{width: 100px;font-weight: 700;}
+#ranking tr.top3 td.num:before{
+    content: '';
+    display: block;
+	position: relative;
+    width: 17px;
+    height: 25px;
+    margin-left: 18px;
+    margin-bottom: -23px;
+    background: url(leaderboard/ico-fire.png);    
+}
+#ranking td.name{width: 180px;}
+#ranking td.score{width: 100px;}
+#ranking td.wallet{width: 80px;}
+#ranking td.wallet a{
+	display: block;	
+	width: 18px;
+	height: 18px;
+	margin: 0 auto;
+	background: url(leaderboard/ico-wallet.png);
+}
+#return{
+	display: block;
+	margin-top: 15px;
+	margin-left: 224px;
+}
+#gameover{
+	display: none;
+	text-align: center;
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 50px;
+	color: #fff;
+	background: url(leaderboard/lead-bg.jpg);
+	z-index: 903;
+}

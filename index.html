@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Asuna Head Ninja game">
+<meta name="author" content="dron">
+<meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<meta property="og:title" content="Asuna Head Ninja game" />
+<meta property="og:type" content="game" />
+<meta property="og:url" content="https://game.asunatoken.com" />
+<meta property="og:image" content="https://game.asunatoken.com/images/og-image.jpg" />
+
+<link rel="stylesheet" href="images/index.css">
+<link rel="stylesheet" href="images/custom.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+<title>Asuna Token Game</title>
+</head>
+<body>
+  <div class="header">
+    <h1>Asuna Token Game</h1>
+    <h2>Hit the tokens heads and take care of the bombs! Good luck.</h2>
+  </div>
+  <div id="extra"></div>
+  <div id="inputname">
+    <p><input id="ninjianame" type="text" maxlength="10" autofocus placeholder="INSERT USERNAME"></p>
+    <img id="submit" src="images/leaderboard/submit.png"/>
+  </div>
+  <div id="menu">
+    <img id="connectwallet" src="images/menu/connectwallet.png"/><br>
+    <img id="playnow" src="images/menu/playnow.png"/><br>
+    <img id="goleader" src="images/menu/leaderboard.png"/>
+  </div>
+  <div id="leaderboard">
+    <img class="lead-title" src="images/leaderboard/lead-title.png"/>
+    <table id="lead-th">      
+        <tr>
+          <td width="100px">POSITION</td>
+          <td width="180px">USERNAME</td>
+          <td width="100px">SCORE</td>
+          <td width="80px">WALLET</td>
+        </tr>
+    </table>
+    <div id="rankBlock">
+      <table id="ranking">
+        <tr class="top3">
+          <td class="num">1</td>
+          <td class="name"></td>
+          <td class="score"></td>
+          <td class="wallet"></td>
+        </tr>
+        <tr class="top3">
+          <td class="num">2</td>
+          <td class="name"></td>
+          <td class="score"></td>
+          <td class="wallet"></td>
+        </tr>
+        <tr class="top3">
+          <td class="num">3</td>
+          <td class="name"></td>
+          <td class="score"></td>
+          <td class="wallet"></td>
+        </tr>
+        <tr>
+          <td class="num"></td>
+          <td class="name"></td>
+          <td class="score"></td>
+          <td class="wallet"></td>
+        </tr>
+        <tr>
+          <td class="num"></td>
+          <td class="name"></td>
+          <td class="score"></td>
+          <td class="wallet"></td>
+        </tr>
+        <tr>
+          <td class="num"></td>
+          <td class="name"></td>
+          <td class="score"></td>
+          <td class="wallet"></td>
+        </tr>
+      </table>
+    </div>
+    <img id="return" src="images/leaderboard/return.png"/>
+  </div>  
+  <div id="gameover">
+    <p>YOUR SCORE</p>
+    <p id="ninjiascore">0</p>
+    <img id="gomenu" src="images/menu/gomenu.png"/><br>
+    <img id="goleader2" src="images/menu/leaderboard.png"/>
+  </div>
+  <div class="footer">
+    <img src="images/logo-icon-asuna.png" class="logo-footer">    
+  </div>
+  <script src="scripts/all.js"></script>
+  <script type="text/javascript" src="scripts/jazzicon_walletlink.js"></script>
+  <script type="text/javascript" src="https://unpkg.com/web3@1.2.11/dist/web3.min.js"></script>
+  <script type="text/javascript" src="https://unpkg.com/web3modal@1.9.0/dist/index.js"></script>  
+  <script type="text/javascript" src="https://unpkg.com/@walletconnect/web3-provider@1.2.1/dist/umd/index.min.js"></script>
+  <script type="text/javascript" src="https://unpkg.com/fortmatic@2.0.6/dist/fortmatic.js"></script>  
+  <script src="scripts/main.js?version=202203191543"></script>
+</body>
+</html>

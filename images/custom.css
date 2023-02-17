@@ -1,0 +1,114 @@
+{include ../../system/css/reset.css}
+{include ../../system/css/common.css}
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background: url("bg-asuna-game.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	text-align: center;
+	font-family: 'Barlow', sans-serif;
+  font-weight: 300;
+}
+
+
+#extra, #view{
+box-shadow: 1px 1px 20px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 1px 1px 20px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 1px 20px 0px rgba(0,0,0,0.75);
+}
+
+.logo-footer{
+	width: 130px;
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+@media only screen and (max-width: 540px) {
+	.logo-footer{
+		width: 100px;
+	}
+}
+
+h1{
+	color: #fff;
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 45px;
+	font-weight: 300;
+	margin-bottom: 0px;
+}
+
+h1:before{
+  content:url(ico-fire.png) ;
+  position:relative;
+	left: -7px;
+	top: 1px;
+ }
+
+ h1:after{
+   content:url(ico-fire.png) ;
+   position:relative;
+ 	 right: -7px;
+ 	 top: 2px;
+  }
+
+@media only screen and (max-width: 540px) {
+	h1{
+		font-size: 38px;
+	}
+}
+
+h2{
+	color: #fff;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  margin-top: 8px;
+}
+
+a{
+	color: #23cc95;
+  font-size: 23px;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  text-align: center;
+	padding: 0;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+	padding: 30px 0;
+}
+
+.footer h3{
+	color: #fff;
+	font-family: 'Barlow', sans-serif;
+	font-weight: 300;
+}
+
+@media screen and (orientation:landscape)
+and (min-device-width: 319px)
+and (max-device-width: 480px) {
+	.header, .footer{
+		display: none;
+	}
+}
